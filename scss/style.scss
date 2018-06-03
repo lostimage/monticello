@@ -473,6 +473,7 @@ textarea {
 	padding:180px 0 140px;
 	text-align: center;
 	& a {
+		display:block;
 		overflow: hidden;
 	}
 	&__images {
@@ -501,6 +502,7 @@ textarea {
 	& img {
 		transition: opacity .3s ease-in-out , transform .3s ease-in-out;
 		&:hover {
+		
 			opacity: 0.6;
 		}
 	}

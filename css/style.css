@@ -1229,6 +1229,7 @@ select {
   padding: 180px 0 140px;
   text-align: center; }
   .ba-gallery a {
+    display: block;
     overflow: hidden; }
   .ba-gallery__images {
     display: -webkit-box;
