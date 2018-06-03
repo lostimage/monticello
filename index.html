@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta name="description" content="" />
+	<meta name="description" content="Monticello simple and modern" />
 	<link rel="icon" href="favicon.png" />
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -19,6 +19,20 @@
 
 <body>
 	<header class="ba-header">
+			<ul id="mobile-menu" class="ba-nav-mobile">
+					<li>
+						<a class="ba-link-active" href="#about">About us</a>
+					</li>
+					<li>
+						<a href="#gallery">projects</a>
+					</li>
+					<li>
+						<a href="#news">news</a>
+					</li>
+					<li>
+						<a href="#contact">contact</a>
+					</li>
+				</ul>
 		<div class="ba-container">
 			<div class="ba-header-bar">
 				<a href="#" class="ba-logo">
@@ -55,6 +69,7 @@
 						</svg>
 					</a>
 				</div>
+				<a href="#mobile-menu" class="ba-menu-button" ><svg width="25px" height="25px" class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
 			</div>
 		</div>
 		<div class="ba-full-slider">
@@ -143,7 +158,7 @@
 						</address>
 					</div>
 				</div>
-				<div class="ba-row">
+				<div class="ba-row ba-row--reverse">
 					<div class="ba-col-6 ba-col-6--left">
 						<h4 class="ba-what-do__suptitle">
 							international
@@ -320,10 +335,12 @@
 					gallery
 				</h2>
 				<div class="ba-row ba-row--gallery">
-					<div class="ba-col-6">
+					<div class="ba-col-gallery">
+						<div class="ba-gallery__image">
 						<a href="#"><img src="img/scottwebb.jpg" alt="scott"></a>
+						</div>
 					</div>
-					<div class="ba-col-6">
+					<div class="ba-col-gallery">
 						<div class="ba-gallery__images">
 						<a href="#"><img src="img/first.jpg" alt="first"></a>	
 						<a href="#"><img src="img/second.jpg" alt="second"></a>	
@@ -477,6 +494,10 @@
 					<title>heart</title>
 					<path d="M10 3.22l-0.61-0.6c-0.983-0.931-2.314-1.504-3.779-1.504-3.038 0-5.5 2.462-5.5 5.5 0 1.462 0.571 2.791 1.501 3.776l-0.002-0.003 8.39 8.39 8.39-8.4c0.928-0.983 1.499-2.312 1.499-3.774 0-3.038-2.462-5.5-5.5-5.5-1.465 0-2.796 0.573-3.782 1.506l0.003-0.002-0.61 0.61z"></path>
 					</symbol>
+					<symbol id="icon-menu" viewBox="0 0 32 32">
+							<title>menu</title>
+							<path d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+							</symbol>
 		</defs>
 
 	</svg>
