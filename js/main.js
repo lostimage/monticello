@@ -35,6 +35,7 @@
 				{
 				  breakpoint: 1200,
 				  settings: {
+					  arrows:false,
 					slidesToShow:2,
 					slidesToScroll:1,
 				  }
@@ -56,10 +57,12 @@
 					$('body,html').animate({scrollTop: top}, 1500);
 				});
 				var nav = $('#mobile-menu') ,
-				menuToggle = $('.ba-menu-button, #mobile-menu') ;
+						overlay = $('.ba-overlay'),
+				menuToggle = $('.ba-menu-button, .ba-overlay') ;
 				menuToggle.on('click' , function (e) {
 					e.preventDefault();
 					nav.toggleClass('ba-open');
+					overlay.toggleClass('ba-overlay-open');
 				});
 		
 })(jQuery);

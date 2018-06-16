@@ -147,6 +147,21 @@ textarea {
 .ba-hide {
 	display:none;
 }
+.ba-overlay {
+	opacity: 0;
+	visibility: hidden;
+	&.ba-overlay-open {
+		visibility: visible;
+		opacity: 1;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 6;
+		background-color: rgba(#7467F8,0.6);
+	}
+}
 .ba-header {
 	position: relative;
 	&__nav {
@@ -236,7 +251,7 @@ textarea {
 	background: #7467F8;
 	margin: 0;
 	padding: 0;
-	z-index: 3;
+	z-index: 13;
 	list-style:none;
 	visibility: hidden;
 	opacity: 0;
@@ -256,6 +271,7 @@ textarea {
 .ba-open {
 	opacity: 1;
 	visibility: visible;
+
 }
 .ba-header-bar {
 	position: absolute;
@@ -611,7 +627,9 @@ textarea {
 .ba-news__slider {
 	margin-left: -30px;
 	display: flex;
-	overflow: hidden;
+	@media screen and (max-width:$bp-medium) {
+		overflow: hidden;
+	}
 }
 .ba-slide-title {
 	font:normal 22px/34px $bolt-font;
